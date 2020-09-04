@@ -1,7 +1,7 @@
 # Experiment manager
 Single file experiment manager for `tf.keras`.
 
-The experiment manager, is here to automatically keep a tidy file hierarchy each time we train a model. 
+The experiment manager, is here to automatically keep a tidy model checkpoints, performance files for your hyperparameter search. It's doing so by maintaining a consistent folder hierarchy based on the hash of your hyperparameters.
 
 This tool automatically: 
 - generate a tree structure for each experiment under a specific identifier and the current date
