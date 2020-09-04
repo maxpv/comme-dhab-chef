@@ -39,13 +39,12 @@ class WriteBestPerformances(Callback):
         df[min_loss_index].to_json(self.output_path, orient='records')
 
 
-class ExperimentsManager():
+class ExperimentManager():
     """
         This class aims at sorting experiments by creating
         folder on the fly and create callbacks.
 
         Minimal usage: callbacks = ExperimentManager().prepare(params)
-        Infos: fretello.atlassian.net/wiki/spaces/RHM/pages/953221573/
     """
     def __init__(self, 
                  exp_base_dir=None,
