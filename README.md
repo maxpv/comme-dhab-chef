@@ -1,4 +1,4 @@
-# comme-dhab-chef
+# Experiment manager
 Single file experiment manager for `tf.keras`.
 
 The experiment manager, is here to automatically keep a tidy file hierarchy each time we train a model. 
