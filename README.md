@@ -9,7 +9,7 @@ This tool automatically:
 
 Let's go through an example to see **how it works**. First let's define our hyperparemeters in a separated JSON file:
 
-```json
+```python
 params = {
     'debug': False,
     'training': {
