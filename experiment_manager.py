@@ -107,10 +107,10 @@ class ExperimentManager():
           Returns the identifier of the current run
           by formatting the dateime.now() object
         """
-        if(self.run_id is not None):
-            return self.run_id
-        else:
-            return 'run--{}'.format(datetime.datetime.now().strftime('%y-%m-%d--%H-%M'))
+        if(self.run_id is None):
+            self.run_id = 'run--{}'.format(datetime.datetime.now().strftime('%y-%m-%d--%H-%M'))
+        
+        return self.run_id 
 
     # Write params to file
     def write_parameters(self):
